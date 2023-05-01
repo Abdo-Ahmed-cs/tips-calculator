@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="tip-calculator.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="calc-tips">
+
+      <div class="bill">
+        <label for="bill">Bill</label>
+        <input type="text" id="bill" placeholder="0.0">
+        <img src="icon-dollar.svg" alt="doller">
+      </div>
+
+      <label for="">Select Tip %</label>
+      <div id="percent">
+        <input type="radio" name="percent" value="0.05" id="0.05">
+        <label for="0.05">5%</label>
+        <input type="radio" name="percent" value="0.1" id="0.1">
+        <label for="0.1">10%</label>
+        <input type="radio" name="percent" value="0.15" id="0.15">
+        <label for="0.15">15%</label>
+        <input type="radio" name="percent" value="0.25" id="0.25">
+        <label for="0.25">25%</label>
+        <input type="radio" name="percent" value="0.5" id="0.5">
+        <label for="0.5">50%</label>
+        <input type="radio" name="percent" id="custom">
+        <label for="custom">custom</label>
+      </div>
+
+      <div class="num-of-people">
+        <label for="num-of-people">Number of People</label>
+        <input type="text" id="num-of-people" placeholder="0">
+        <img src="images/icon-person.svg" alt="People">
+      </div>
+
+    </div>
+
+
+    <div id="tips">
+
+      <div id="part-one">
+
+        <div class="tip-amount">
+          <div class="tags">
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+          <span id="tip-amount">$0.0</span>
+        </div>
+
+        <div class="total">
+          <div class="tags">
+            <span>Total</span>
+            <span>/ person</span>
+          </div>
+          <span id="total">$0.0</span>
+        </div>
+
+      </div>
+
+      <button id="reset-btn">Reset</button>
+
+    </div>
+
+  </div>
+
+  <script src="tipcalculator.js"></script>
+</body>
+
+</html>
